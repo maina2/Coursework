@@ -24,7 +24,7 @@ count= 0
 for vowel in text :
     if vowel in vowels :
         count+= 1
-        print("the number of vowels are:: \n ",  vowel)
+        print("the number of vowels are::  ",  vowel)
 print("the number of vowels is::",count )
 
 
