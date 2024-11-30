@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        text-align: center;
+      }
+      
+      header {
+        background-color: #6200ea;
+        color: white;
+        padding: 20px;
+      }
+      
+      main {
+        padding: 20px;
+      }
+      
+      .game-container {
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+      }
+      
+      .buttons {
+        margin: 20px 0;
+      }
+      
+      .choice-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin: 5px;
+        background-color: #6200ea;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .choice-btn:hover {
+        background-color: #3700b3;
+      }
+      
+      .results {
+        margin: 20px 0;
+      }
+      
+      .scoreboard {
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+      
+      footer {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+      }
+      
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <main>
+    <div class="game-container">
+      <p id="message">Choose your option:</p>
+      <div class="buttons">
+        <button class="choice-btn" data-choice="Rock">Rock</button>
+        <button class="choice-btn" data-choice="Paper">Paper</button>
+        <button class="choice-btn" data-choice="Scissors">Scissors</button>
+      </div>
+      <div class="results">
+        <p><strong>Your choice:</strong> <span id="player-choice">-</span></p>
+        <p><strong>Computer's choice:</strong> <span id="computer-choice">-</span></p>
+        <p><strong>Result:</strong> <span id="result">-</span></p>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <p><strong>Player Score:</strong> <span id="player-score">0</span></p>
+      <p><strong>Computer Score:</strong> <span id="computer-score">0</span></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Rock Paper Scissors Game</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
